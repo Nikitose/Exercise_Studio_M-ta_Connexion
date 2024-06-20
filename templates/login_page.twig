@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Concert+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Concert+One&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <!--CSS-->
+	<link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/{{ style }}.css">
+    <!--ICONE-->
+    <link rel="icon" type="image/x-icon" href="images/slack.png">
+    <!--TITRE-->
+    <title>Login</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header role="banner">
+    </header>
+    
+    <!--MAIN-->
+    <main role="main">
+        {% block main %}
+			<div class="box-connected">
+				<i class="fa-brands fa-slack"></i>
+				<h2>Connexion<h2>
+				<form method="post" class="form" action="reception.php">
+					<input type="text" name="username" placeholder="identifiant" required>
+					<input type="password" name="password" placeholder="mot de passe" required>
+					<button type="submit">se connecter</button>
+				</form>
+			</div>
+        {% endblock %}
+    </main>
+
+    <!--FOOTER-->
+    <footer role="contentinfo">
+    </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/***********BASE***********/
+body, main {
+    margin: 0;
+    padding: 0;
+}
+
+h2, .form input, .form button, p, a {
+    font-family: "Montserrat", sans-serif;
+}

@@ -1,0 +1,46 @@
+/***********MAIN***********/
+main {
+    height: 100vh;
+    background-color: rgb(104, 104, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/***box-connected***/
+.box-connected {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.189);
+    padding: 23px 100px;
+    border-radius: 10px;
+}
+
+/***icone***/
+i {
+    font-size: 30px;
+}
+
+/***p***/
+p {
+    margin: 10px 0 17px 0;
+}
+
+/***Reessayer***/
+a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(227, 220, 121);
+    padding: 5px 40px;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+/*hover*/
+a:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.2s;
+}

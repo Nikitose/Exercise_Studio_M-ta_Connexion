@@ -1,0 +1,72 @@
+/***********MAIN***********/
+main {
+    height: 100vh;
+    background-color: rgb(104, 104, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/***box-connected***/
+.box-connected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.189);
+    padding: 70px 40px;
+    border-radius: 10px;
+}
+
+/***logo***/
+.fa-brands {
+    color: rgb(227, 220, 121);
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+/***h2***/
+h2 {
+    margin: 0;
+}
+
+/***FORM***/
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/***INPUT***/
+.form input {
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*hover*/
+.form input[type="text"]:focus,
+.form input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #000000;
+}
+
+/***BUTTON***/
+.form button {
+    width: 300px;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 2px;
+    background-color: rgb(227, 220, 121);
+    border: 0;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+/*hover*/
+.form button:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.2s;
+}
